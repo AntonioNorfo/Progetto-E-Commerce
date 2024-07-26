@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anime Funko World</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bgGround">
+    <header>
+      <nav class="navbar brGround fixed-top mt-2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              class="rounded-5 logo"
+              src="https://i.pinimg.com/736x/db/2d/a0/db2da06ee237eff7de3e468edde2bde4.jpg"
+              alt="LogoFunkoAnimeWorld"
+          /></a>
+          <button
+            class="navbar-toggler bg-secondary-subtle"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Welcome to EveryOne *-*</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active " aria-current="page" href="#">  Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                   
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Funko-Pop
+                    </a>
+                    <ul class="dropdown-menu imgNavDrop">
+                      <li><a class="dropdown-item text-primary fw-bold" href="#">Dragon Ball</a></li>
+                      <li><a class="dropdown-item text-primary fw-bold" href="#">One Piece</a></li>
+                      <li></li>
+                      <li><a class="dropdown-item text-primary fw-bold" href="#">Naruto</a></li>
+                    </ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Cart</a>
+                </li>
+               
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 class="text-danger text-center mt-3">Anime World</h1>
+      <div class="container mt-5">
+        <div class="row justify-content-center" id="productsContainer">
+
+         
+        </div>
+      </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

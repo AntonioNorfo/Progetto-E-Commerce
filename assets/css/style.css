@@ -1,0 +1,20 @@
+.offcanvas {
+  background-image: url("https://img.freepik.com/foto-gratuito/giappone-sfondo-arte-digitale_23-2151546203.jpg?t=st=1721984136~exp=1721987736~hmac=34ba866fd77081a620b3c8c90ba683e6041cf3936e4219f9ef02547018e8a807&w=740");
+  background-size: cover;
+  background-position: center;
+}
+.bgGround {
+  background-image: url("https://img.freepik.com/foto-gratuito/bella-scena-di-cartone-animato-di-paesaggio-anime_23-2151035237.jpg?t=st=1721984541~exp=1721988141~hmac=9df01c87be6f8a4e0ff55584b51c7c879ad17aae8113a4b4a7cc5c42e0a2aae3&w=1380");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.logo {
+  width: 50px;
+}
+.imgNavDrop {
+  background-image: url("https://img.freepik.com/foto-gratuito/paesaggio-di-fantasia-natura-magenta_23-2150693733.jpg?t=st=1721985232~exp=1721988832~hmac=62621f9c4c2bd0338864301be1a7a6123965b7ef32311d3d69f10f46d8fc4360&w=1380");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
