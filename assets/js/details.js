@@ -23,15 +23,13 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log(singleProduct);
       const detailRow = document.getElementById("detail-row");
 
-      // Controlla se l'utente è un admin
-      const isAdmin = true; // Sostituisci con il controllo reale per l'admin
+      const isAdmin = true;
 
-      // Crea la sezione amministrativa se l'utente è un admin
       const adminSection = isAdmin
         ? `
         <div class="d-flex justify-content-between mt-2">
           <a href="./backoffice.html?productId=${singleProduct._id}" class="btn btn-warning">Modifica</a>
-          <button class="btn btn-danger" onclick="deleteProduct('${singleProduct._id}')">Delete</button>
+          <button class="btn btn-danger" onclick="confirmDeleteProduct('${singleProduct._id}')">Delete</button>
         </div>
       `
         : "";
@@ -55,7 +53,15 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log(err);
     });
 
-  window.deleteProduct = function (id) {
+  window.confirmDeleteProduct = function (id) {
+    const confirmation = confirm("Sei sicuro di voler eliminare questo prodotto?");
+
+    if (confirmation) {
+      deleteProduct(id);
+    }
+  };
+
+  function deleteProduct(id) {
     fetch(apiUrl + id, {
       method: "DELETE",
       headers: {
@@ -73,5 +79,5 @@ document.addEventListener("DOMContentLoaded", () => {
       .catch((err) => {
         console.log("error", err);
       });
-  };
+  }
 });
