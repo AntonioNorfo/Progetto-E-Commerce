@@ -1,42 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Back Office - Anime Funko World</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Back Office Anime Funko World</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
   </head>
-  <body>
-    <div class="container mt-5">
-      <h1>Back Office - Manage Products</h1>
-      <form id="productForm">
-        <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" required />
+  <body class="bgGround">
+    <header>
+      <nav class="navbar brGround fixed-top mt-2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              class="rounded-5 logo"
+              src="https://i.pinimg.com/736x/db/2d/a0/db2da06ee237eff7de3e468edde2bde4.jpg"
+              alt="LogoFunkoAnimeWorld"
+            />
+          </a>
         </div>
-        <div class="mb-3">
-          <label for="description" class="form-label">Description</label>
-          <textarea class="form-control" id="description" required></textarea>
+      </nav>
+    </header>
+    <main class="mt-3">
+      <div class="text-center">
+        <h1>Back Office - Anime Funko World</h1>
+      </div>
+      <div class="container mt-5">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-4">
+            <form id="product-form">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea class="form-control" id="description" rows="5" required></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="price" class="form-label">Price</label>
+                <input type="number" class="form-control" id="price" required />
+              </div>
+              <div class="mb-3">
+                <label for="brand" class="form-label">Brand</label>
+                <input type="text" class="form-control" id="brand" required />
+              </div>
+              <div class="mb-3">
+                <label for="imageUrl" class="form-label">Image URL</label>
+                <input type="text" class="form-control" id="imageUrl" required />
+              </div>
+              <button type="submit" class="btn btn-primary">Crea Articolo</button>
+              <button type="button" id="save-changes" class="btn btn-secondary">Salva Modifiche</button>
+            </form>
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="brand" class="form-label">Brand</label>
-          <input type="text" class="form-control" id="brand" required />
-        </div>
-        <div class="mb-3">
-          <label for="imageUrl" class="form-label">Image URL</label>
-          <input type="url" class="form-control" id="imageUrl" required />
-        </div>
-        <div class="mb-3">
-          <label for="productId" class="form-label">Product ID (for update/delete)</label>
-          <input type="text" class="form-control" id="productId" />
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-        <button type="button" id="resetButton" class="btn btn-secondary ms-2">Reset</button>
-        <button type="button" id="deleteButton" class="btn btn-danger ms-2">Delete</button>
-      </form>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/backoffice.js"></script>
   </body>
 </html>
